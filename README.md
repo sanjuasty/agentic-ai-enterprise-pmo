@@ -1,2 +1,2 @@
 # agentic-ai-enterprise-governance
-Multi-agent AI system for enterprise program governance and execution intelligence
+Multi-agent GenAI system for enterprise PMO governance, risk assessment, and executive reporting using CrewAI and LLM orchestration.
