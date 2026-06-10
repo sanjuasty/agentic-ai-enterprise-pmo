@@ -1,16 +1,35 @@
-# Agentic AI Enterprise PMO System
+# Agentic AI Enterprise PMO Architecture
 
-## Overview
-Multi-agent system simulating enterprise program governance.
+## Objective
+Build a multi-agent AI system to support enterprise PMO governance, delivery oversight, and executive reporting.
 
-## Agents
-- Execution Agent: Tracks delivery progress
-- Risk Agent: Identifies risks
-- Governance Agent: Ensures compliance
-- Reporting Agent: Generates executive insights
+## Agent Roles
 
-## Flow
-User Input → Agents → Orchestrator → Executive Report
+### Execution Agent
+Assesses delivery health, milestone adherence, and execution progress.
 
-## Use Case
-Designed for large-scale transformation programs (data centers, BFSI, digital transformation).
+### Risk Agent
+Identifies delivery, financial, vendor, and compliance risks.
+
+### Governance Agent
+Assesses governance concerns and determines escalation requirements.
+
+### Reporting Agent
+Synthesizes outputs into executive-level reporting.
+
+## Orchestration Layer
+CrewAI coordinates agent collaboration and sequential reasoning.
+
+## Workflow
+
+Project Update
+↓
+Execution Agent
+↓
+Risk Agent
+↓
+Governance Agent
+↓
+Reporting Agent
+↓
+Executive PMO Summary
