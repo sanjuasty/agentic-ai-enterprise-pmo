@@ -1,11 +1,12 @@
 class GovernanceAgent:
     def analyze(self, update: str):
-        flags = []
 
-        if "compliance" in update.lower():
-            flags.append("Regulatory review required")
+        escalation_needed = False
+
+        if "delay" in update.lower():
+            escalation_needed = True
 
         return {
-            "governance_status": "Checked",
-            "flags": flags
+            "governance_status": "Reviewed",
+            "executive_escalation": escalation_needed
         }
