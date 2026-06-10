@@ -1,13 +1,20 @@
-from orchestrator import PMOOrchestrator
+from core.orchestrator import PMOOrchestrator
 
-if __name__ == "__main__":
-    system = PMOOrchestrator()
+
+def main():
 
     sample_update = """
-    Data center rollout is progressing but there is a delay in procurement.
-    Budget impact under review. Compliance sign-off pending.
+    Data center rollout delayed due to vendor issue.
+    Budget review in progress.
+    Compliance signoff pending.
     """
 
-    result = system.run(sample_update)
+    orchestrator = PMOOrchestrator()
 
-    print(result["executive_summary"])
+    result = orchestrator.run(sample_update)
+
+    print(result)
+
+
+if __name__ == "__main__":
+    main()
